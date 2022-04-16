@@ -73,5 +73,10 @@ namespace NemesisV3
         {
             module.ExecuteScript("loadstring(game:HttpGet('https://pastebin.com/raw/8nYi8xtS'))()");
         }
+
+        private void killButton_Click(object sender, EventArgs e)
+        {
+            module.killRoblox();
+        }
     }
 }

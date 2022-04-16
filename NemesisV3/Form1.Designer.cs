@@ -43,6 +43,7 @@
             this.flyButton = new System.Windows.Forms.Button();
             this.infJumpButton = new System.Windows.Forms.Button();
             this.scriptList = new System.Windows.Forms.ListBox();
+            this.killButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // scriptBox
@@ -187,6 +188,16 @@
             this.scriptList.Size = new System.Drawing.Size(120, 290);
             this.scriptList.TabIndex = 14;
             // 
+            // killButton
+            // 
+            this.killButton.Location = new System.Drawing.Point(328, 335);
+            this.killButton.Name = "killButton";
+            this.killButton.Size = new System.Drawing.Size(99, 37);
+            this.killButton.TabIndex = 15;
+            this.killButton.Text = "Kill Roblox";
+            this.killButton.UseVisualStyleBackColor = true;
+            this.killButton.Click += new System.EventHandler(this.killButton_Click);
+            // 
             // Nemesis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,6 +205,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(672, 385);
+            this.Controls.Add(this.killButton);
             this.Controls.Add(this.scriptList);
             this.Controls.Add(this.infJumpButton);
             this.Controls.Add(this.flyButton);
@@ -232,6 +244,7 @@
         private System.Windows.Forms.Button flyButton;
         private System.Windows.Forms.Button infJumpButton;
         private System.Windows.Forms.ListBox scriptList;
+        private System.Windows.Forms.Button killButton;
     }
 }
 
